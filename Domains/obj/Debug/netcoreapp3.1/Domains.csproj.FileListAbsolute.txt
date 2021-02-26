@@ -1,0 +1,9 @@
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\bin\Debug\netcoreapp3.1\Domains.deps.json
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\bin\Debug\netcoreapp3.1\Domains.dll
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\bin\Debug\netcoreapp3.1\Domains.pdb
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.csprojAssemblyReference.cache
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfoInputs.cache
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfo.cs
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.csproj.CoreCompileInputs.cache
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.dll
+E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.pdb

@@ -1,0 +1,92 @@
+﻿@model CartViewModel
+@using Microsoft.Extensions.Options
+
+@inject IOptions<StripeSettings> Stripe
+@{
+    ViewData["Title"] = "Cart";
+}@{
+    var totalPrice = ViewBag.TotalAllItems * 100;
+}
+
+<section style="margin-top:150px;" id="sectionBasket" >
+    <p class="linkHistory"><a class="nav-link LinkH" href="/Order/History" >Historique</a></p>
+    <form asp-action="Stripe" method="POST">
+
+
+        @if (Model != null)
+        {
+
+            <table class=" container col-lg-8">
+
+                    @foreach (var item in Model.ListProducts)
+                    {
+                        <tr class="trBasket ">
+                            <td hidden name="ProductId" value="@item.ProductId">
+                            </td>
+                            <td class="tdBasket" name="ProductName" value="@item.ProductName">
+                                @item.ProductName
+
+                            </td>
+                            @*<td>
+                                <img src="~/images/ProductsImages/@item.ProductUrlImage" style=" height: 40px;" />
+
+                            </td>*@
+                          
+                            <td  class="tdBasket" name="ProductQuantity" value="@item.ProductQuantity">
+                                Quantité @item.ProductQuantity
+                            </td>
+                           
+                            <td class="tdBasket" name="ProductPrice" value="@item.ProductPrice">
+                                Prix unitaire @item.ProductPrice
+                            </td>
+                          
+                            <td  class="tdBasket" name="Total" value="@item.Total">
+                                Total  @item.Total
+                                <input hidden value="@item.Total" />
+                            </td>
+                            <td  class="tdBasket">
+                                <a class="link-danger alert" asp-controller="Order" asp-action="RemoveItem" asp-route-id="@item.ProductId">x</a>
+                            </td>
+                        </tr>
+
+
+                    }
+                    <tr>
+                        <td class="col-4" value="@Model.TotalAllItems">
+                            Total de la commande: @Model.TotalAllItems <span>euro</span>
+
+                            @if (Model.TotalAllItems.Equals(0))
+                            {
+
+                            }
+
+                            else
+                            {
+
+                                <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button" data-key="@Stripe.Value.PublicKey" data-amount="@totalPrice" data-description="paiement">
+
+                                </script>
+
+                            }
+
+
+                        </td>
+                    </tr>
+
+            </table>
+        }
+        @if(Model == null)
+        {
+            <div class="basketEmpty">
+                 <p> Votre panier est vide</p>
+            </div>
+           
+        }
+
+
+
+
+    </form>
+
+
+</section>
