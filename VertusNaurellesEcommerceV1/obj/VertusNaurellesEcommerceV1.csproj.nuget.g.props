@@ -5,12 +5,14 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\malek\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\malek\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.8.1</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+    <SourceRoot Include="C:\Users\malek\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -20,6 +22,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-grid.css</Link>
     </Content>
@@ -27,6 +30,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-grid.css.map</Link>
     </Content>
@@ -34,6 +38,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-grid.min.css</Link>
     </Content>
@@ -41,6 +46,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-grid.min.css.map</Link>
     </Content>
@@ -48,6 +54,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-reboot.css</Link>
     </Content>
@@ -55,6 +62,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-reboot.css.map</Link>
     </Content>
@@ -62,6 +70,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-reboot.min.css</Link>
     </Content>
@@ -69,6 +78,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap-reboot.min.css.map</Link>
     </Content>
@@ -76,6 +86,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap.css</Link>
     </Content>
@@ -83,6 +94,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap.css.map</Link>
     </Content>
@@ -90,6 +102,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap.min.css</Link>
     </Content>
@@ -97,6 +110,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\css\bootstrap.min.css.map</Link>
     </Content>
@@ -104,6 +118,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.bundle.js</Link>
     </Content>
@@ -111,6 +126,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.bundle.js.map</Link>
     </Content>
@@ -118,6 +134,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.bundle.min.js</Link>
     </Content>
@@ -125,6 +142,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.bundle.min.js.map</Link>
     </Content>
@@ -132,6 +150,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.js</Link>
     </Content>
@@ -139,6 +158,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.js.map</Link>
     </Content>
@@ -146,6 +166,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.min.js</Link>
     </Content>
@@ -153,6 +174,7 @@
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>4.6.0</NuGetPackageVersion>
       <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
       <Private>False</Private>
       <Link>wwwroot\js\bootstrap.min.js.map</Link>
     </Content>

@@ -77,11 +77,9 @@ namespace VertusNaurellesEcommerceV1
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios
                 app.UseHsts();
             }
    
-            //pipeline
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -94,7 +92,6 @@ namespace VertusNaurellesEcommerceV1
             //key stoker sur azure 
 
             StripeConfiguration.ApiKey = Configuration.GetSection("Stripe")["SecretKey"];
-            //middleware
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

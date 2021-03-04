@@ -20,7 +20,7 @@
             <a asp-controller="Home" asp-action="Index" class="btn btn-dark">Menu principal</a>
 
         </p>
-        <table >
+        <table>
             <thead>
                 <tr>
                     <th>
@@ -32,13 +32,13 @@
                     <th>
                         @Html.DisplayNameFor(model => model.Description)
                     </th>
-                    
+
                     @*<th >
-                        @Html.DisplayNameFor(model => model.UrlImage)
-                    </th>*@
-                <th>
-                    Actions
-                </th>
+                            @Html.DisplayNameFor(model => model.UrlImage)
+                        </th>*@
+                    <th>
+                        Actions
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -55,8 +55,8 @@
                             @Html.DisplayFor(modelItem => item.Description)
                         </td>
                         @*<td>
-                            @Html.DisplayFor(modelItem => item.UrlImage)
-                        </td>*@
+                                @Html.DisplayFor(modelItem => item.UrlImage)
+                            </td>*@
                         <td class="tdBtns">
                             <a class="btn btn-dark my-1" asp-action="Details" asp-route-Id="@item.IdCategory">Détails</a>
                             <a class="btn btn-dark  my-1" asp-action="Edit" asp-route-Id="@item.IdCategory">Modifier</a>
@@ -67,5 +67,4 @@
             </tbody>
         </table>
     </div>
-   </section>
-    
+</section>

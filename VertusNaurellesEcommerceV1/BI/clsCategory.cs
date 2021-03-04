@@ -42,7 +42,7 @@ namespace VertusNaurellesEcommerceV1.BI
 
         public Category GetCategoryById(int id)
         {
-            return db.TbCategories.FirstOrDefault(c=>c.IdCategory == id);
+            return db.TbCategories.FirstOrDefault(c => c.IdCategory == id);
         }
 
         public Category UpdateCategory(int id, Category newCategory)
@@ -50,7 +50,7 @@ namespace VertusNaurellesEcommerceV1.BI
             var category = db.TbCategories.Find(id);
             category.CategoryName = newCategory.CategoryName;
             category.Description = newCategory.Description;
-            category.UrlImage = newCategory.UrlImage;
+            category.SeoNameCategory = newCategory.SeoNameCategory;
             db.SaveChanges();
             return category;
         }

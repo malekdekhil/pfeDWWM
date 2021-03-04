@@ -11,7 +11,7 @@ using VertusNaurellesEcommerceV1.BI;
 namespace VertusNaurellesEcommerceV1.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
 
@@ -31,7 +31,7 @@ namespace VertusNaurellesEcommerceV1.Areas.Admin.Controllers
         // GET: CategoryController/Details/5
         public ActionResult Details(int id)
         {
-            
+
 
             return View(categoryService.GetCategoryById(id));
         }
@@ -83,7 +83,7 @@ namespace VertusNaurellesEcommerceV1.Areas.Admin.Controllers
         // GET: CategoryController/Delete/5
         public ActionResult Delete(int id)
         {
-            
+
             return View(categoryService.GetCategoryById(id));
         }
 

@@ -7,3 +7,12 @@ E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfo.
 E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.csproj.CoreCompileInputs.cache
 E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.dll
 E:\ProjetsPfe\DWWM\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.pdb
+C:\Users\malek\Desktop\PfeDWWM\Domains\bin\Debug\netcoreapp3.1\Domains.deps.json
+C:\Users\malek\Desktop\PfeDWWM\Domains\bin\Debug\netcoreapp3.1\Domains.dll
+C:\Users\malek\Desktop\PfeDWWM\Domains\bin\Debug\netcoreapp3.1\Domains.pdb
+C:\Users\malek\Desktop\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.csprojAssemblyReference.cache
+C:\Users\malek\Desktop\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfoInputs.cache
+C:\Users\malek\Desktop\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.AssemblyInfo.cs
+C:\Users\malek\Desktop\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.csproj.CoreCompileInputs.cache
+C:\Users\malek\Desktop\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.dll
+C:\Users\malek\Desktop\PfeDWWM\Domains\obj\Debug\netcoreapp3.1\Domains.pdb
